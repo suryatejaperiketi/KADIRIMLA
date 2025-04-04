@@ -1,0 +1,95 @@
+@media(max-width:768px){
+    
+    #tm-nav {
+        z-index: 1000;
+        transition: all 0.3s ease;
+        background-color: rgba(0,0,0,0.7);
+    }
+    }
+
+  @media(min-width:992px){
+ .pc-translate{
+     position: absolute;
+     right: 20px;
+     top: 20px;
+     font-size: 20px;
+     background: orange;
+     border: 1px solid #ccc;
+     padding: 2px 3px;
+     cursor: pointer;
+     border-radius: 5px;
+   }
+   .mobiletranslate{
+     display: none;
+   } 
+}
+@media (max-width: 768px) {
+  .mobiletranslate {
+    position: fixed; /* Keep it fixed in place */
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    top: 12px; /* Adjust top position */
+    right: 70px; /* Move it to the right end */
+    background: orange;
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+    cursor: pointer;  
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it stays above other elements */
+  }
+
+
+
+.pc-translate {
+   display: none; /* Hide the default button */
+}
+.mobiletranslate {
+  display: block !important;
+  z-index: 9999 !important;
+
+}
+}
+
+@media(min-width:992px){
+  .imgmobile{
+    display: none;
+  }
+}
+@media(max-width:768px){
+  .imgdesktop{
+    display: none;
+  }
+}
+@media(min-width:992px){
+  .logo{
+      position: relative;
+      height: 70px; 
+      left: -500px;
+      top: -10px;
+      box-shadow: 10px 10px 15px rgba(21, 1, 1, 0.5); 
+       border-radius: 5px; 
+  }
+  .Logo{
+    display: none;
+  }
+}
+
+@media(max-width:768px){
+  .Logo {
+    position: fixed;
+    height: 60px;
+    left: 10px; 
+    top: 5px; 
+    box-shadow: 5px 5px 10px rgba(21, 1, 1, 0.5); 
+    border-radius: 5px;
+    z-index: 1000; 
+}
+
+.logo{
+    display: none;
+  }
+}
+
+
+    

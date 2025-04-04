@@ -1,0 +1,363 @@
+
+
+@media(min-width:992px){
+ #blogcontent{
+   width: 50%;
+   display: flex;
+   top: 70px;
+   position: relative;
+   align-items: center;
+   
+   justify-content: center;
+   
+ }
+ .row{
+  background-color: #fff;
+  margin-bottom: 110px;
+ }
+}
+#intro {
+background-image: none !important;
+background-color: white;
+}
+
+@media(max-width:768px){
+
+ #blogcontent{
+   width: 82%;
+   display: flex;
+   padding-bottom: 30px;
+   position: relative;
+   margin-bottom: 20px;
+   top: 80px;
+   align-items: center;
+   justify-content: center;
+ }
+ .row{
+  background-color: #fff;
+  margin-bottom: 80px;
+ }
+}
+
+ /* Adjust the margin or padding between sections */
+ #Development {
+   margin-top: 0;
+   /* Remove or reduce margin at the top */
+   padding-top: 0;
+   /* Optional: Adjust padding to reduce space further */
+ }
+
+ .tm-item-container {
+   margin-top: 50px;
+   margin-bottom: 50px;
+   /* Reduce the top margin for the box */
+ }
+
+ /* For Mobile: Adjust spacing specifically for mobile screens */
+ @media (max-width: 768px) {
+   #Development {
+     margin-top: 0;
+     padding-top: 0;
+   }
+
+   .tm-item-container {
+     margin-top: 20px;
+     /* Smaller space for mobile view */
+   }
+ }
+
+ /* Default state: Hide the images on larger screens (PC and tablets) */
+ .mobileabout,
+ .mobiledevelopment {
+   display: none;
+   /* Do not display these divs by default */
+ }
+
+ /* Mobile screens: Show the images inside mobileabout and mobiledevelopment */
+ @media (max-width: 768px) {
+
+   .mobileabout,
+   .mobiledevelopment {
+     display: block;
+     /* Make these divs visible on mobile */
+     text-align: center;
+     /* Center the images if needed */
+   }
+
+   .mobileabout img,
+   .mobiledevelopment img {
+     width: 100%;
+     /* Ensure the image spans full width */
+     height: auto;
+     /* Maintain the aspect ratio of the image */
+   }
+ }
+ #Blog{
+   background-color: white;
+ }
+
+ footer {
+   margin-top: auto;
+   /* Push the footer to the bottom */
+ }
+
+ /* Footer Styles */
+ .footer {
+   position: relative;
+   /* Not necessary to use absolute or fixed */
+   width: 100%;
+   height: 60px;
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 20px 10px;
+   font-family: Arial, sans-serif;
+   font-size: 14px;
+ }
+
+ .footer-content {
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   padding: 0 20px;
+ }
+
+ .footer a {
+   color: #fff;
+   text-decoration: none;
+   font-weight: bold;
+ }
+
+ .footer a:hover {
+   text-decoration: underline;
+ }
+
+ /* General Reset */
+ body,
+ html {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+ }
+
+ p {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ .parallax-window {
+   position: relative;
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center;
+   min-height: 100vh;
+   /* Full screen height */
+ }
+ 
+
+ /* Mobile-specific adjustments */
+ @media (max-width: 768px) {
+   .parallax-window {
+     background-attachment: scroll;
+     /* Use scroll attachment on mobile */
+   }
+   .parallax-window ,#blog{
+position: relative;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+min-height: 80vh;
+}
+ }
+ .blog_section .heading_container {
+-webkit-box-align: center;
+ -ms-flex-align: center;
+     align-items: center;
+}
+
+.blog_section .heading_container h2::before {
+left: 50%;
+-webkit-transform: translateX(-50%);
+     transform: translateX(-50%);
+}
+
+.blog_section .box {
+margin-top: 55px;
+background-color: #f1f2f3;
+}
+
+.blog_section .box .img-box {
+position: relative;
+}
+
+.blog_section .box .img-box .blog_date {
+position: absolute;
+left: 25px;
+bottom: -15px;
+padding: 10px 15px;
+font-size: 18px;
+background-color: #160e0b;
+margin: 0;
+text-align: center;
+border: 3px solid #ffffff;
+color: #ffffff;
+}
+
+.blog_section .box .img-box img {
+width: 100%;
+height: 50%;
+}
+
+.blog_section .box .detail-box {
+margin-top: 10px;
+padding: 25px;
+}
+
+.blog_section .box .detail-box h5 {
+font-weight: bold;
+}
+
+.blog_section .box .detail-box p {
+font-size: 15px;
+}
+
+/* Box Container */
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #ddd; /* Optional: Add a border */
+  border-radius: 5px; /* Rounded corners for a polished look */
+  overflow: hidden; /* Ensure content stays inside */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+.box img {
+  width: 100%; /* Ensure image fits the box width */
+  height: 100%; /* Ensure image takes full height */
+  object-fit: cover; /* Crop the image to fill the box while maintaining aspect ratio */
+}
+
+/* Image Styling for PC screens */
+@media (min-width: 992px) {
+  .img-box {
+    width: 100%;
+    height: 400px; /* Ensures the image box remains fixed */
+    overflow: hidden;
+    position: relative; /* To position other elements inside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits within the box while maintaining aspect ratio */
+  }
+}
+
+/* Image Styling for Mobile screens */
+@media (max-width: 768px) {
+  .img-box {
+    width: 100%;
+    height: 100%; /* Ensures the image box remains fixed */
+    overflow: hidden;
+    position: relative; /* To position other elements inside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits within the box while maintaining aspect ratio */
+  }
+}
+
+
+
+/* Blog Date Styling */
+.blog_date {
+position: absolute;
+bottom: -10px;
+left: 10px;
+background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+color: white;
+padding: 5px 10px;
+font-size: 14px;
+font-weight: bold;
+border-radius: 3px;
+}
+
+/* Text Content Styling */
+.detail-box {
+padding: 20px;
+background-color: #f9f9f9; /* Light background */
+}
+
+.detail-box h5 {
+font-size: 18px;
+margin-bottom: 10px;
+font-weight: bold;
+color: #333; /* Dark text color */
+}
+
+.detail-box p {
+font-size: 14px;
+color: #666;
+margin-bottom: 15px;
+}
+
+.detail-box a {
+font-size: 14px;
+text-decoration: none;
+color:#ffbc00; 
+font-weight: bold;
+}
+
+.detail-box a:hover {
+color: #0056b3; /* Hover effect for links */
+}
+
+.blog_section .box .detail-box a {
+display: inline-block;
+padding: 10px 30px;
+background-color: transparent;
+color: #160e0b;
+border-radius: 0;
+border: 1px solid #160e0b;
+-webkit-transition: all .2s;
+transition: all .2s;
+}
+
+.blog_section .box .detail-box a:hover {
+background-color: #160e0b;
+color: #ffffff;
+}
+
+
+
+      /* Default navbar styling */
+#tm-nav {
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Light black background when scrolling down */
+#tm-nav.scrolled-down {
+   background-color: rgba(0, 0, 0, 0.7); /* Light black */
+   /* Optional blur effect */
+}
+
+/* Transparent background when at the top */
+@media(min-width:992px){
+  #tm-nav.top {
+    background-color: transparent;
+  }
+}
+
+@media(max-width:768px){
+  #tm-nav.top {
+    background-color: rgba(0,0,0,0.7);
+  }
+    
+}
+
