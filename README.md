@@ -6,4 +6,4 @@ This website showcases the latest developments, initiatives, and projects in Kad
 
 https://suryatejaperiketi.github.io/KADIRIMLA/
 
-live site 
+live site
